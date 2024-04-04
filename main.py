@@ -8,7 +8,7 @@ def get_mars_rover_photos(sol, camera):
     return data['photos']
 
 def main():
-    sol = input("Введите номер сола: ")
+    sol = input("Введите номер сола (до 4101): ")
     camera = input("Введите название камеры (например, FHAZ, RHAZ, MAST, CHEMCAM, MAHLI): ")
     photos = get_mars_rover_photos(sol, camera)
     print(f"Найдено {len(photos)} фотографий:")
